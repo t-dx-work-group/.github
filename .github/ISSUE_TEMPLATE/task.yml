@@ -30,5 +30,5 @@ body:
     id: parent_issue
     attributes:
       label: 関連Issue
-      description: 親Issueや関連するIssueの番号（例: #123）を入力してください。
+      description: "親Issueや関連するIssueの番号（例: #123）を入力してください。"
       placeholder: "#"
