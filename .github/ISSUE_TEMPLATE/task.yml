@@ -1,0 +1,34 @@
+name: 実行タスク
+description: 調査・開発・テストなどの具体的な作業用
+title: "【タスク】"
+labels: ["task"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: このタスクで達成すべきことを簡潔に記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: 完了条件 (Definition of Done)
+      description: このタスクが「終わった」と判断するための条件をチェックボックス形式で記載してください。
+      value: |
+        - [ ] 〇〇のデータが抽出できること
+        - [ ] 〇〇さんに確認が取れていること
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 実施内容
+      description: 具体的な作業手順や調査メモなどを記載してください。
+  - type: input
+    id: parent_issue
+    attributes:
+      label: 関連Issue
+      description: 親Issueや関連するIssueの番号（例: #123）を入力してください。
+      placeholder: "#"
