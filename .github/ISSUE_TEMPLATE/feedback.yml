@@ -1,0 +1,60 @@
+name: QC改善・プロジェクト起案
+description: テーマ選定から横展開までの改善活動用テンプレート
+title: "[QC] "
+labels: ["enhancement", "epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        QCストーリーに基づいたプロジェクト（Epic）起案フォームです。
+        ※「予定」の項目は、プロジェクト進行に合わせて後からチェックボックスを埋めたり修正したりして活用してください。
+  - type: textarea
+    id: theme
+    attributes:
+      label: 1. テーマ選定（目的・背景）
+      description: なぜこの活動を行うのか、依頼者や現場の困りごとを記述してください。
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 2. 目標設定 (KGI/KPI)
+      description: 達成したい目標を定量的に記載してください。
+      value: |
+        - **KGI (最終成果):** 例) 
+        - **KPI (中間指標):** 例) 
+    validations:
+      required: true
+  - type: textarea
+    id: analysis
+    attributes:
+      label: 3. 現状調査・要因解析（予定）
+      description: 現状どうなっているか、何が真因だと推測されるか。タスクとして切り出せるものはチェックボックスで記載してください。
+      value: |
+        - [ ] 
+  - type: textarea
+    id: countermeasures
+    attributes:
+      label: 4. 対策実施（予定）
+      description: どのようなシステムや仕組みを構築するか記載してください。
+      value: |
+        - [ ] 
+  - type: textarea
+    id: check
+    attributes:
+      label: 5. 効果確認（予定）
+      description: どのように成果を測定し、目標（KGI/KPI）を達成したか判断するか記載してください。
+      value: |
+        - [ ] 
+  - type: textarea
+    id: act
+    attributes:
+      label: 6. 標準化・横展開（予定）
+      description: 属人化を防ぐためのマニュアル化や、他部署・他工程への展開案を記載してください。
+      value: |
+        - [ ] 
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考・参考URL
+      description: 関連するExcelファイルや共有フォルダのパス、参考資料のURLなどを記載してください。
