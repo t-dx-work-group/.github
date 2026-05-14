@@ -1,0 +1,45 @@
+name: 不具合・改善要望
+description: 現場からのフィードバックやエラー報告、改善の提案を受け付けます
+title: "【不具合/要望】"
+labels: ["bug", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        現場での円滑な業務遂行のため、詳細な情報の入力にご協力をお願いします。
+  - type: textarea
+    id: description
+    attributes:
+      label: 発生した現象 / 要望内容
+      description: 何が起きたか、または何を実現したいかを記入してください。
+      placeholder: |
+        例：〇〇画面で保存ボタンを押しても反応がない。
+        例：〇〇の入力をプルダウン選択式にしてほしい。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順（不具合の場合）
+      description: 不具合が発生した際の手順を教えてください。
+      value: |
+        1. 〇〇を入力
+        2. 〇〇ボタンを押す
+        3. 
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: 本来、どのようになるのが正解かを記入してください。
+      placeholder: エラーが出ずに、〇〇画面へ遷移する。
+  - type: textarea
+    id: context
+    attributes:
+      label: 現場の状況
+      description: 誰が、どの端末で、いつ発生したか等の詳細を記入してください。
+      placeholder: |
+        ・報告者：
+        ・使用端末：(例: iPad, Windows PC)
+        ・発生日時：
+    validations:
+      required: true
