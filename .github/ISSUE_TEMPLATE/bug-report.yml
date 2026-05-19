@@ -1,6 +1,6 @@
 name: 不具合・改善要望
 description: 現場からのフィードバックやエラー報告、改善の提案を受け付けます
-title: "【不具合/要望】"
+title: "[不具合/要望]"
 labels: ["bug", "feedback"]
 body:
   - type: markdown
