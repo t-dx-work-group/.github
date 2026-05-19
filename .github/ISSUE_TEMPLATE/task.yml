@@ -1,6 +1,6 @@
 name: 実行タスク
 description: 調査・開発・テストなどの具体的な作業用
-title: "【タスク】"
+title: "[タスク]"
 labels: ["task"]
 body:
   - type: textarea
