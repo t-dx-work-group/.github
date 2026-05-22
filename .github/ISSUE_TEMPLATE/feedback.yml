@@ -16,22 +16,22 @@ body:
     validations:
       required: true
   - type: textarea
+    id: analysis
+    attributes:
+      label: 2. 現状調査・要因解析（予定）
+      description: 現状どうなっているか、何が真因だと推測されるか。タスクとして切り出せるものはチェックボックスで記載してください。
+      value: |
+        - [ ] 
+  - type: textarea
     id: goal
     attributes:
-      label: 2. 目標設定 (KGI/KPI)
+      label: 3. 目標設定 (KGI/KPI)
       description: 達成したい目標を定量的に記載してください。
       value: |
         - **KGI (最終成果):** 例) 
         - **KPI (中間指標):** 例) 
     validations:
       required: true
-  - type: textarea
-    id: analysis
-    attributes:
-      label: 3. 現状調査・要因解析（予定）
-      description: 現状どうなっているか、何が真因だと推測されるか。タスクとして切り出せるものはチェックボックスで記載してください。
-      value: |
-        - [ ] 
   - type: textarea
     id: countermeasures
     attributes:
