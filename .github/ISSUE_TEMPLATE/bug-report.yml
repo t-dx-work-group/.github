@@ -2,11 +2,13 @@ name: 不具合・改善要望
 description: 現場からのフィードバックやエラー報告、改善の提案を受け付けます
 title: "[不具合/要望]"
 labels: ["bug", "feedback"]
+
 body:
   - type: markdown
     attributes:
       value: |
         現場での円滑な業務遂行のため、詳細な情報の入力にご協力をお願いします。
+
   - type: textarea
     id: description
     attributes:
@@ -17,6 +19,7 @@ body:
         例：〇〇の入力をプルダウン選択式にしてほしい。
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -25,7 +28,8 @@ body:
       value: |
         1. 〇〇を入力
         2. 〇〇ボタンを押す
-        3. 
+        3.
+
   - type: textarea
     id: context
     attributes:
@@ -33,14 +37,15 @@ body:
       description: 誰が、どの端末で、いつ発生したか等の詳細を記入してください。
       placeholder: |
         ・報告者：
-        ・使用端末：(例: iPad, Windows PC)
+        ・使用端末：（例: iPad, Windows PC）
         ・発生日時：
     validations:
       required: true
-　- type: textarea
+
+  - type: textarea
     id: expected
     attributes:
       label: 期待される動作
       description: 本来、どのようになるのが正解かを記入してください。
-      placeholder: エラーが出ずに、〇〇画面へ遷移する。
-  
+      placeholder: |
+        エラーが出ずに、〇〇画面へ遷移する。
