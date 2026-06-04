@@ -27,12 +27,6 @@ body:
         2. 〇〇ボタンを押す
         3. 
   - type: textarea
-    id: expected
-    attributes:
-      label: 期待される動作
-      description: 本来、どのようになるのが正解かを記入してください。
-      placeholder: エラーが出ずに、〇〇画面へ遷移する。
-  - type: textarea
     id: context
     attributes:
       label: 現場の状況
@@ -43,3 +37,10 @@ body:
         ・発生日時：
     validations:
       required: true
+　- type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: 本来、どのようになるのが正解かを記入してください。
+      placeholder: エラーが出ずに、〇〇画面へ遷移する。
+  
